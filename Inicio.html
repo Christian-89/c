@@ -1,0 +1,82 @@
+<html>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700&display=swap">
+
+<head>
+    <meta charset="UTF-8">
+    <title>NutriFit</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body, html {
+            font-family: Arial, sans-serif;
+           /* background-image: url('Iconos/Fondo1.jpg'); /*Imagen de Fondo*/
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            margin: 0;
+        }
+        .container {
+        width: 360px;
+        height: 800px;
+        background-image: url('Iconos/Fondo1.jpg');
+        background-size: 360px 800px; /* Ajusta el tamaño de la imagen */
+        background-position: center; /* Centra la imagen horizontalmente */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        }
+
+        .logo {
+            text-align: center; /* Centra el logo horizontalmente */
+        }
+
+        .logo img {
+            width: 300px; /* Ajusta el ancho según tus necesidades */
+            height: 300px; /* Ajusta la altura para mantener la proporción */
+            border-radius: 50%; /* Crea los bordes redondeados para formar un círculo */
+            object-fit: cover; /* Hace que la imagen llene todo el contenedor sin distorsionarse */
+            margin-top: 200px;
+        }   
+        
+        .title {
+            font-family: 'Passion One', sans-serif;
+            font-size: 96px;
+            font-weight: bold;
+            color: #000;
+            margin-bottom: 20px;
+        }
+        .login-button {
+            background-color: #D55025;
+            color: #fff;
+            border: none;
+            padding: 15px 100px;
+            font-size: 18px;
+            border-radius: 9px;
+            cursor: pointer;
+            margin-top: 200px; /*Vajar el boton*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="Iconos/Logo.jpg" alt="Logo de mi aplicacion web">
+        </div>
+        <div class="title"></div>
+        <button class="login-button">LOG IN</button>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const loginButton = document.querySelector(".login-button");
+            loginButton.addEventListener("click", function() {
+            window.location.href = "Login.html";
+            });
+        });
+    </script>
+</body>
+</html>
